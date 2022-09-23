@@ -1,5 +1,7 @@
 import React from "react";
 
+import iconX from "../assets/images/icon-remove.svg";
+
 const FilterContainer = ({
 	setLevelFilter,
 	setRoleFilter,
@@ -13,13 +15,13 @@ const FilterContainer = ({
 }) => {
 	return (
 		<div className='flex py-5 px-2 mx-5 my-8 justify-between shadow-md rounded bg-white md:mx-20 md:px-8 transition-all duration-300'>
-			<div class='flex flex-wrap gap-2'>
+			<div className='flex flex-wrap gap-2'>
 				{levelFilter && (
 					<div className='bg-teal-50 text-teal-600 flex justify-center items-center pl-2 rounded-md ml-3 font-semibold'>
 						<span className='mr-2'>{levelFilter} </span>
 						<button className='cursor-pointer bg-cyan-800 text-cyan-100 text-lg p-2 rounded-r-lg hover:bg-teal-600'>
 							<img
-								src='./images/icon-remove.svg'
+								src={iconX}
 								alt=''
 								onClick={() => setLevelFilter("")}
 							/>{" "}
@@ -31,7 +33,7 @@ const FilterContainer = ({
 						<span className='mr-2'>{roleFilter} </span>
 						<button className='cursor-pointer bg-cyan-800 text-cyan-100 text-lg p-2 rounded-r-lg hover:bg-teal-600'>
 							<img
-								src='./images/icon-remove.svg'
+								src={iconX}
 								alt=''
 								onClick={() => setRoleFilter("")}
 							/>{" "}
@@ -44,7 +46,7 @@ const FilterContainer = ({
 							<span className='mr-2'>{lang} </span>
 							<button className='cursor-pointer bg-cyan-800 text-cyan-100 text-lg p-2 rounded-r-lg hover:bg-teal-600'>
 								<img
-									src='./images/icon-remove.svg'
+									src={iconX}
 									alt=''
 									onClick={() =>
 										setlangFilter(
@@ -63,7 +65,8 @@ const FilterContainer = ({
 							<span className='mr-2'>{tool} </span>
 							<button className='cursor-pointer bg-cyan-800 text-cyan-100 text-lg p-2 rounded-r-lg hover:bg-teal-600'>
 								<img
-									src='./images/icon-remove.svg'
+									s
+									src={iconX}
 									alt=''
 									onClick={() =>
 										setToolFilter(
